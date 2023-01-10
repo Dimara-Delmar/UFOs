@@ -13,16 +13,21 @@
     />
     <link rel="stylesheet" href="static/css/style.css" />
   </head>
-
+  
   <body class="bg-dark">
     <div class="wrapper">
+      
+      <!-- Navbar -->
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
         <a class="navbar-brand" href="index.html">UFO Sightings</a>
       </nav>
+
+      <!-- Jumbotron -->
       <div class="jumbotron">
         <h1 class="display-4">The Truth is Out There</h1>
       </div>
 
+      <!-- Article title and paragraph -->
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-4 article-title">
@@ -51,6 +56,7 @@
         </div>
       </div>
 
+      <!-- Filter -->
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
@@ -62,25 +68,26 @@
                   <input type="text" placeholder="1/10/2010" id="datetime" />
                 </li>
                 <li class="list-group-item bg-dark">
-                  <label for="city">Enter City</label>
-                  <input type="text" placeholder="roswell" id="city" />
+                    <label for="date">Enter a City</label>
+                    <input type="text" class="form-control" placeholder="roswell" id="city">
                 </li>
                 <li class="list-group-item bg-dark">
-                  <label for="state">Enter State</label>
-                  <input type="text" placeholder="ca" id="state" />
+                    <label for="date">Enter a State</label>
+                    <input type="text" class="form-control" placeholder="ca" id="state">
                 </li>
                 <li class="list-group-item bg-dark">
-                  <label for="country">Enter Country</label>
-                  <input type="text" placeholder="us" id="country" />
+                    <label for="date">Enter a Country</label>
+                    <input type="text" class="form-control" placeholder="us" id="country">
                 </li>
                 <li class="list-group-item bg-dark">
-                  <label for="shape">Enter Shape</label>
-                  <input type="text" placeholder="circle" id="shape" />
+                    <label for="date">Enter a Shape</label>
+                    <input type="text" class="form-control" placeholder="circle" id="shape">
                 </li>
               </ul>
             </form>
           </div>
 
+          <!-- Table -->
           <div class="col-md-9">
             <table class="table table-striped">
               <thead>
